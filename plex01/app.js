@@ -13,6 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
     initMagneticButtons();
     initContactForm();
     initMobileMenu();
+    
+    // Example: Animate the title on load
+    var title = document.querySelector('h1');
+    if (title) {
+        title.style.opacity = 0;
+        setTimeout(function() {
+            title.style.transition = 'opacity 1s';
+            title.style.opacity = 1;
+        }, 200);
+    }
 });
 
 // Custom Cursor
